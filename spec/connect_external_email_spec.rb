@@ -4,7 +4,6 @@ describe "Class::ConnectExternalEmail" do
   subject(:person_1) { ConnectExternalEmail.new("http://web.site", "per.son_1+outside@gmail.com") } 
   subject(:person_2) { ConnectExternalEmail.new("http://web.site", "per.son_2+outside@yahoo.com") } 
   subject(:ms_client_1) { ConnectExternalEmail.new("https://bank.com", "ms.client+bank@gmail.com") } 
-  # subject(:mr_customer) { ConnectExternalEmail.new("https://collections.com", "mr.customer+bank@gmail.com") } 
   subject(:ms_client_2) { ConnectExternalEmail.new("bank_account_website.biz", "ms.client+bank@gmail.com") } 
   subject(:mr_client) { ConnectExternalEmail.new("bank_account_website.biz", "mrclient+bank@gmail.com") } 
   
@@ -96,7 +95,4 @@ describe "Class::ConnectExternalEmail" do
       end
     end
   end
-  
-  #If new email connects old website, update to new email since the old connection is only for the data aka not edge case in current form
-
 end
